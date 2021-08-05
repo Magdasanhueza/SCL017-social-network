@@ -2,6 +2,7 @@ import { logOut } from "./../logOut.js";
 import { getComments } from "../post.js";
 import { likePost } from "../likeDeletEdition.js";
 import { deletePost, editPostFb } from "../likeDeletEdition.js";
+import { navBar } from "../Navigation.js";
 
 const showEditPost = (doc) => {
   const divEdit = document.createElement("div");
@@ -35,28 +36,49 @@ const showEditPost = (doc) => {
 
 export const wall = (e) => {
   const wallHome = document.createElement("div");
+  console.log('wallHome', wallHome);
+  console.log('navBar', navBar());
+  wallHome.appendChild(navBar());
+  //navigationEvents(wallHome);
   const viewWall = `
-    <div class="header">
-      <div class="containerBoxGreenOne"> <img class="boxGreenOne"  src=Assets/sostenible (1).png> </div>
-        <h1>Eluney</h1>
-        <h3>No lo utilizo, te lo regalo!</h3>
-
-        <button id="logOut" class="buttonLogout">Cerrar Sesión </button>
-        </div>
     
     <div class="wallContainer">
-     <div class="postFull" id='postFull'></div>     
+    <div class="postFull" id='postFull'></div>     
     </div>
     <a href="#/post"> Postear mensaje     
     </a>
     
     `;
 
-  wallHome.innerHTML = viewWall;
+  wallHome.innerHTML += viewWall;
+  
 
   // cierre de sesion
   const buttonLogOut = wallHome.querySelector("#logOut");
   buttonLogOut.addEventListener("click", logOut);
+  /*const insertComments = (postDiv, data) => {
+  //postDiv.innerHTML += data.comments;
+    const date = new Date(data.date.toDate())
+    const year = date.getFullYear()
+    const month = date.getMonth()
+    const day = date.getDate()
+    const hour = date.getHours()
+    const minute= date.getMinutes();
+    postDiv.innerHTML +=
+      "<div class='divComments'>" +
+      "<button id='edit' class='buttonEdit'>Editar</button>" +
+      "<button id='delete' class='buttonDelete'>Borrar</button>" +
+      "<button id='like' class='buttonLike'>Like</button>" +
+      "<div id='photo' class='photoProfile'> <img class='IconoProfile' src='Assets/iconoUsuario.png'></div>" +
+      data.nombre +
+      " " +
+      data.comments +
+      " " +
+     (year + "-" + month + "-" + day + " " + hour+":"+minute) +
+     "<img src = '"+ data.imgURL + "'>" + 
+      "</div>";
+    console.log(data);
+  };
 
   //llama a coleccion y devuelve promesa
   getComments().then((querySnapshot) => {

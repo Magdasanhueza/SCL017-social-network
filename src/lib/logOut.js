@@ -1,13 +1,22 @@
+export const navigationEvents = (context) => {
+  console.log('context', context);
+  // cierre de sesion
+
+  
+};
+
+
+
 export const logOut = () => {
-  return firebase
-    .auth()
-    .signOut()
-    .then(() => {
+  console.log('Hola');
+  firebase.auth()
+  .signOut()
+  .then(() => {
       console.log("cerré sesión");
       window.location.href = "";
-    })
-    .catch((error) => {
+  })
+  .catch((error) => {
       console.log(error);
       // An error happened.
-    });
+  });
 };
