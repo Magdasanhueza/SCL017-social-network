@@ -65,6 +65,7 @@ export const getFile = () => {
 
 };
 
+
 //funcion que limpia el texterea solo cuando sepublica el comentario
 const cleanFormPost = () => {
     document.querySelector('#postEluney').value = '';
