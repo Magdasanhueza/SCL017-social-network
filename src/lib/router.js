@@ -5,7 +5,7 @@ import { templatePost } from './view/templatePost.js';
 
 
 
-export const changeRouter = (hash) => {     //exportar const que ira cambiando las rutas
+export const changeRouter = (hash) => {     //exportar const que ira cambiando las rutas a main
     if (hash === '#/') {        
         return templateView(hash)
     }if (hash === '#/Registrate') {
