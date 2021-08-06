@@ -5,23 +5,25 @@ import { deletePost, editPostFb } from "../likeDeletEdition.js";
 
 const showEditPost = (doc) => {
   const divEdit = document.createElement("div");
-  const textArea = `<textarea
-        id="newPostEluney-${doc.id}"
-        class="newPostEluney"
-        cols="30"
-        rows="10"
-        required
-      >${doc.data().postContent}
-      </textarea> 
-      <button id="submitButton"  class="submit" type="submit" >Guardar</button>`;
+  const textArea = `<div>
+        <textarea
+          id="newPostEluney-${doc.id}"
+          class="newPostEluney"
+          cols="30"
+          rows="10"
+          required
+        >${doc.data().postContent}
+        </textarea> 
+        <button id="submitButton"  class="submit" type="submit" >Guardar</button>
+      </div>`;
   divEdit.innerHTML = textArea;
   const buttonSubmit = divEdit.querySelector("#submitButton");
   let newPostToUpdate = "";
   buttonSubmit.addEventListener("click", () => {
     editPostFb(doc.id, newPostToUpdate);
     setTimeout(() => {
-      window.location.reload()
-    }, 2 * 1000)
+      window.location.reload();
+    }, 2 * 1000);
   });
   divEdit
     .querySelector(`#newPostEluney-${doc.id}`)
@@ -132,6 +134,7 @@ export const wall = (e) => {
 
       const openEdit = document.getElementById(`openEdit-${doc.id}`); //busca boton eliminar
       openEdit.addEventListener("click", () => {
+        console.log("123: ", openEdit);
         showEditPost(doc);
       });
 

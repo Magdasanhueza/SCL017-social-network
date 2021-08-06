@@ -116,7 +116,7 @@ body {
 }
 
 
-.h1 {
+h1 {
     font-family: "Sofia", cursive;
     font-size: 40px;
     margin-left: 16%;
@@ -511,9 +511,9 @@ h3 {
   .ingresa {
     height: 12%;
     width: 35%;
-    margin-left: 3%;
+    margin-left: 30%;
     margin-top: 6%;
-  }
+}
 
   .Registro {
     height: 12%;
@@ -547,7 +547,7 @@ header {
 h1 {
     font-family: "Sofia", cursive;
     font-size: 40px;
-    margin-left: 15%;
+    margin-left: 29%;
     color: white;
     margin-top: -7vh;
 }
@@ -719,6 +719,8 @@ h3 {
     display: block;
     margin-left: 4%;
     background-color: #a8e3f6;
+    margin-top: -9vh;
+    height: 7vh;
 }
 
 .queDeseasRegalar {
@@ -780,10 +782,10 @@ h3 {
 }
 
 .newPostEluney {
-    width: 143%;
+    width: 64%;
     height: 5vh;
-    margin-top: 79%;
+    margin-top: -15%;
     z-index: 1;
-    margin-left: -120%;
+    margin-left: 13%;
 }
 
