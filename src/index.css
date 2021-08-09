@@ -115,13 +115,12 @@ body {
   border-radius: 10px;
 }
 
-
 h1 {
-    font-family: "Sofia", cursive;
-    font-size: 40px;
-    margin-left: 16%;
-    color: white;
-    margin-top: -10vh;
+  font-family: "Sofia", cursive;
+  font-size: 40px;
+  margin-left: 29%;
+  color: white;
+  margin-top: -10vh;
 }
 
 .slogan {
@@ -141,7 +140,7 @@ h1 {
 .header {
   font-family: "Sofia", cursive;
   background-color: #398c6e;
-  margin-top: 17vh;
+  margin-top: 21vh;
 }
 
 .postFull {
@@ -159,9 +158,9 @@ h1 {
 }
 
 .boxGreenOne {
-    width: 100%;
-    height: 100%;
-    margin-top: 1vh;
+  width: 100%;
+  height: 100%;
+  margin-top: 1vh;
 }
 
 .imgBox {
@@ -184,14 +183,14 @@ h2 {
   background-color: chartreuse;
 }
 
-.buttonLogOut {
-    border-radius: 6px;
-    border: 2px solid #398c6e;
-    background-color: #87bfb1;
-    font-family: "Solway", serif;
-    height: 6vh;
-    grid-column: 1/2;
-    margin-left: 87%;
+header > .buttonLogout {
+  border-radius: 6px;
+  border: 2px solid #398c6e;
+  background-color: #87bfb1;
+  font-family: "Solway", serif;
+  height: 6vh;
+  grid-column: 1/2;
+  margin-left: 87%;
 }
 
 h3 {
@@ -199,18 +198,24 @@ h3 {
   font-size: 14px;
   margin-left: 13%;
   color: white;
-  margin-top: -3%;
+  margin-top: -2%;
 }
 
 .divComments {
-    width: 100%;
-    height: 35%;
-    background-color: #398c6e;
-    padding: 0%;
-    border: dashed #9cb795;
-    border-radius: 4%;
-    margin-top: 2vh;
+  border: 2px solid rgb(0 0 0 / 26%);
+  width: 101vh;
+  height: 56vh;
+  margin: 33% 4% 6% 6%;
+  padding: 3vh;
+  background-color: #398c6e;
+  text-align: center;
+  display: flex;
+  align-items: stretch;
+  --h: 120px;
+  border-radius: 2vh;
+  margin-top: -2vh;
 }
+
 .IconoProfile {
   height: 10%;
   width: 15%;
@@ -228,27 +233,40 @@ h3 {
 }
 
 .photoId {
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 109px;
   border-radius: 50%;
+  margin-top: 2vh;
+  margin-left: 21%;
 }
 .nameId {
-  font-family: "Sofia", cursive;
+  font-family: "Solway", cursive;
   font-size: 20px;
+  margin-left: 10%;
 }
 .dateId {
-  font-family: "Sofia", cursive;
+  font-family: "Solway", solid;
   font-size: 15px;
+  margin-top: 5%;
+  margin-left: 29%;
 }
 .postId {
-    display: flex;
-    background-color: bisque;
-    width: 90%;
-    height: 30%;
-    margin-left: 5%;
-    border: dashed #000;
-    border-radius: 1vh;
+  width: 75vh;
+  height: 40vh;
+  font-family: "Handlee", cursive;
+  text-align: center;
+  overflow-y: scroll;
+  word-break: break-word;
+  background-color: #fff5bf;
+  opacity: 0.7;
+  height: var(--h);
+  --h: 220px;
+  border-radius: 2vh;
+  margin-left: -33vh;
+  margin-top: 16vh;
+  font-size: 19px;
 }
+
 .likesId {
   display: flex;
 }
@@ -264,8 +282,8 @@ h3 {
   cursor: pointer;
 }
 .option {
-    width: 4%;
-    margin-left: 117%;
+  width: 11%;
+  margin-left: 77%;
 }
 
 .option:hover,
@@ -280,60 +298,57 @@ h3 {
 
 .windowContent {
   display: none;
-  position: static;
+  position: absolute;
   left: 75%;
   top: 32%;
-  /* background-image:url(./Assets/burbuja.png); */
-  /* background-size: 67px; */
-  /* background-repeat: no-repeat; */
-  /* min-width: 85px; */
-  /* height: 78px; */
+  background-image: url(./Assets/burbuja.png);
+  background-size: 67px;
+  background-repeat: no-repeat;
+  min-width: 85px;
+  height: 78px;
+  overflow: auto;
   z-index: 1;
 }
 .openOption {
   display: block;
+  margin-left: 4%;
+  background-color: #a8e3f6;
+  margin-top: -9vh;
+  height: 7vh;
 }
 
-/* .cerrar {display: none;} */
-
-/* .editModal {display: block;} */
-
-/*pantalla de registro*/
-.containerSignUp {
-  background-color: rgba(117, 111, 129, 0.74);
-  width: 55%;
-  height: 80%;
-  margin-left: auto;
-  margin-right: auto;
+.queDeseasRegalar {
+  font-family: "Sofia", cursive;
+  margin-left: 37%;
+  font-size: xx-large;
+  margin-top: 4%;
 }
 
-.imgSign {
-  width: 24%;
-  height: auto;
-  display: block;
-  margin: auto;
-  margin-top: -2%;
+.postEluney {
+  height: 26vh;
+  width: 41%;
+  margin-left: 29%;
+  border-radius: 2vh;
+  border: dotted;
 }
 
-.pointSignUp {
-  width: 70%;
-  height: 5%;
-  background-color: rgb(246 246 246);
+.buttonPostOne {
+  border-radius: 6px;
+  border: 2px solid #398c6e;
+  background-color: #87bfb1;
   font-family: "Solway", serif;
-  margin-left: 13%;
-  margin-top: 1vh;
-  cursor: pointer;
-  border: none;
-  border-radius: 10px;
-  padding: 2%;
+  margin-top: 2%;
+  margin-left: 28%;
+  width: 20%;
 }
 
-.fnick {
+.buttonCancel {
+  border-radius: 6px;
+  border: 2px solid #398c6e;
+  background-color: #87bfb1;
   font-family: "Solway", serif;
-  color: black;
-  font-size: 15px;
-  margin-left: 14%;
-  margin-top: 42vh;
+  margin-left: 2vh;
+  width: 20%;
 }
 
 .singUpForm {
@@ -341,6 +356,7 @@ h3 {
   width: 100%;
   margin-top: 7%;
 }
+
 .buttonSignUp {
   display: block;
   margin: auto;
@@ -355,79 +371,41 @@ h3 {
   cursor: pointer;
 }
 
-.buttonSignUp:hover {
-  background-color: #c3dbd5;
-}
-
-.footerSignUp {
-  background-color: rgba(117, 111, 129, 0.74);
-  font-family: "Solway", serif;
-  font-size: 100%;
-  width: 100%;
-  height: 20%;
-  color: white;
-  cursor: pointer;
-}
-
-.texSignUp {
-  text-align: center;
-}
-.heartIcon {
-    width: 8%;
-    height: auto;
-    margin-left: 61%;
-    margin-top: 1%;
-}
-
-.newPostEluney {
-  width: 30%;
-  height: 30%;
-}
-.btnPost {
-    border-radius: 6px;
-    border: 2px solid #398c6e;
-    background-color: #87bfb1;
-    font-family: "Solway", serif;
-    height: 6vh;
-    grid-column: 1/2;
-    margin-left: 46vh;
-    margin-top: 10vh;
-}
-.buttonPostOne {
-  border-radius: 6px;
-  border: 2px solid #398c6e;
-  background-color: #87bfb1;
-  font-family: "Solway", serif;
-  margin-top: 2%;
-}
-
-.buttonCancel {
-  border-radius: 6px;
-  border: 2px solid #398c6e;
-  background-color: #87bfb1;
-  font-family: "Solway", serif;
-}
-
-.postEluney {
-  height: 26vh;
-  width: 41%;
-  margin-left: 4%;
-  border-radius: 2vh;
-  border: dotted;
-}
-
-.queDeseasRegalar {
-  font-family: "Sofia", cursive;
-  margin-left: 35%;
-  font-size: xx-large;
-  margin-top: 4%;
-}
-
 .cajaHojaVerde {
   height: 13vh;
   width: 13vh;
-  margin-left: 50%;
+  margin-left: 41%;
   margin-top: 10%;
+}
+.heartIcon {
+  width: 11%;
+  height: auto;
+  margin-left: 81%;
+  margin-top: -3%;
+}
+
+.btnPost {
+  border-radius: 6px;
+  border: 2px solid #398c6e;
+  background-color: #87bfb1;
+  font-family: "Solway", serif;
+  height: 6vh;
+  grid-column: 1/2;
+  margin-left: 41%;
+  margin-top: 6%;
+}
+
+.newPostEluney {
+  width: 64%;
+  height: 5vh;
+  margin-top: -15%;
+  z-index: 1;
+  margin-left: 13%;
+}
+
+.numberLike {
+  font-size: 20px;
+  margin-top: 0vh;
 }
 
 @media only screen and (device-width: 768px) {
@@ -513,7 +491,7 @@ h3 {
     width: 35%;
     margin-left: 30%;
     margin-top: 6%;
-}
+  }
 
   .Registro {
     height: 12%;
@@ -537,208 +515,223 @@ h3 {
     grid-column: 1/2;
     margin-left: 50vh;
     margin-top: -11vh;
-}
+  }
 
+  header {
+    font-family: "Sofia", cursive;
+  }
 
-header {
-  font-family: "Sofia", cursive;
-}
-
-h1 {
+  h1 {
     font-family: "Sofia", cursive;
     font-size: 40px;
     margin-left: 29%;
     color: white;
     margin-top: -7vh;
-}
+  }
 
-.slogan {
-  font-family: "Solway", serif;
-  margin-top: -8%;
-  font-size: 111%;
-  margin-left: 13%;
-}
+  .slogan {
+    font-family: "Solway", serif;
+    margin-top: -8%;
+    font-size: 111%;
+    margin-left: 13%;
+  }
 
-.wallContainer {
-  background-color: #c3dbd5;
-  display: grid;
-  grid-template-columns: 15% 30% 10% 30% max-content;
-  grid-template-rows: 50px 668px 50px;
-}
+  .wallContainer {
+    background-color: #c3dbd5;
+    display: grid;
+    grid-template-columns: 15% 30% 10% 30% max-content;
+    grid-template-rows: 50px 668px 50px;
+  }
 
-.header {
+  .header {
     background-color: #398c6e;
     margin-top: 9vh;
-}
+  }
 
-.postFull {
-  background-color: transparent;
-  grid-column: 2/5;
-  grid-row: 2/2;
-}
+  .postFull {
+    background-color: transparent;
+    grid-column: 2/5;
+    grid-row: 2/2;
+  }
 
-.containerBoxGreenOne {
-  width: 6%;
-  height: 14%;
-  background-color: transparent;
-  margin-top: -10%;
-  margin-left: 4%;
-}
+  .containerBoxGreenOne {
+    width: 6%;
+    height: 14%;
+    background-color: transparent;
+    margin-top: -10%;
+    margin-left: 4%;
+  }
 
-.boxGreenOne {
+  .boxGreenOne {
     width: 100%;
     height: 100%;
     margin-top: 2vh;
-}
+  }
 
-h2 {
-  font-family: "Sofia", cursive;
-  font-size: 33px;
-  margin-left: 13%;
-  color: white;
-}
-.containerButton {
-  width: 30%;
-  height: 15%;
-  margin-left: 46%;
-  margin-top: 1%;
-  background-color: chartreuse;
-}
+  h2 {
+    font-family: "Sofia", cursive;
+    font-size: 33px;
+    margin-left: 13%;
+    color: white;
+  }
+  .containerButton {
+    width: 30%;
+    height: 15%;
+    margin-left: 46%;
+    margin-top: 1%;
+    background-color: chartreuse;
+  }
 
-.buttonLogOut {
-  border-radius: 6px;
-  border: 2px solid #398c6e;
-  background-color: #87bfb1;
-  font-family: "Solway", serif;
-  height: 100%;
-  width: 100%;
-  grid-column: 1/2;
-}
+  .buttonLogOut {
+    border-radius: 6px;
+    border: 2px solid #398c6e;
+    background-color: #87bfb1;
+    font-family: "Solway", serif;
+    height: 100%;
+    width: 100%;
+    grid-column: 1/2;
+  }
 
-h3 {
-  font-family: "Solway", serif;
-  font-size: 14px;
-  margin-left: 13%;
-  color: white;
-  margin-top: -3%;
-}
+  h3 {
+    font-family: "Solway", serif;
+    font-size: 14px;
+    margin-left: 13%;
+    color: white;
+    margin-top: -3%;
+  }
 
-.divComments {
-  width: 100%;
-  height: 35%;
-  background-color: #398c6e;
-  padding: 0%;
-  border: dashed #87bfb1;
-  border-radius: 4%;
-  margin-top: 2%;
-}
+  .divComments {
+    border: 2px solid rgb(0 0 0 / 26%);
+    width: 40vh;
+    height: 40vh;
+    margin: 33% 4% 6% 6%;
+    padding: 3vh;
+    background-color: #398c6e;
+    text-align: center;
+    display: flex;
+    align-items: stretch;
+    --h: 120px;
+    border-radius: 2vh;
+    margin-top: -2vh;
+  }
 
-.IconoProfile {
-  height: 10%;
-  width: 15%;
-  margin-left: 85%;
-}
+  .IconoProfile {
+    height: 10%;
+    width: 15%;
+    margin-left: 85%;
+  }
 
-.Bar {
-  height: 30px;
-  width: 30px;
-}
+  .Bar {
+    height: 30px;
+    width: 30px;
+  }
 
-.idPost {
-  display: flex;
-  justify-content: space-around;
-}
+  .idPost {
+    display: flex;
+    justify-content: space-around;
+  }
 
-.photoId {
+  .photoId {
     height: 80px;
     width: 80px;
     border-radius: 50%;
     margin-top: 2vh;
-}
-.nameId {
+    margin-left: 56%;
+  }
+  .nameId {
     font-family: "Solway", cursive;
     font-size: 20px;
-}
-.dateId {
-  font-family: "Solway", solid;
-  font-size: 15px;
-  margin-top: 5%;
-}
-.postId {
+    margin-left: 10%;
+  }
+  .dateId {
+    font-family: "Solway", solid;
+    font-size: 15px;
+    margin-top: 5%;
+    margin-left: 29%;
+  }
+  .postId {
+    width: 40vh;
+    height: 40vh;
+    font-family: "Handlee", cursive;
+    text-align: center;
+    overflow-y: scroll;
+    word-break: break-word;
+    background-color: #fff5bf;
+    opacity: 0.7;
+    height: var(--h);
+    --h: 220px;
+    border-radius: 2vh;
+    margin-left: -24vh;
+    margin-top: 11vh;
+    font-size: 19px;
+  }
+
+  .likesId {
     display: flex;
-    background-color: bisque;
-    width: 90%;
-    height: 30%;
-    margin-left: 5%;
-    border: dashed;
-    margin-top: 0vh;
-}
-.likesId {
-  display: flex;
-}
-.commentId {
-  display: flex;
-}
-.comentarPost {
-  width: 9%;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1%;
-  margin-left: 3%;
-  cursor: pointer;
-}
-.option {
-    width: 4%;
-    margin-left: 96%;
-}
+  }
+  .commentId {
+    display: flex;
+  }
+  .comentarPost {
+    width: 9%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 3%;
+    cursor: pointer;
+  }
+  .option {
+    width: 20%;
+    margin-left: 77%;
+  }
 
-.option:hover,
-.option:focus {
-  background-color: #c4cdc2;
-}
+  .option:hover,
+  .option:focus {
+    background-color: #c4cdc2;
+  }
 
-.pointThree {
-  position: relative;
-  display: inline-block;
-}
+  .pointThree {
+    position: relative;
+    display: inline-block;
+  }
 
-.windowContent {
-  display: none;
-  position: absolute;
-  left: 75%;
-  top: 32%;
-  background-image: url(./Assets/burbuja.png);
-  background-size: 67px;
-  background-repeat: no-repeat;
-  min-width: 85px;
-  height: 78px;
-  overflow: auto;
-  z-index: 1;
-}
-.openOption {
+  .windowContent {
+    display: none;
+    position: absolute;
+    left: 75%;
+    top: 32%;
+    background-image: url(./Assets/burbuja.png);
+    background-size: 67px;
+    background-repeat: no-repeat;
+    min-width: 85px;
+    height: 78px;
+    overflow: auto;
+    z-index: 1;
+  }
+  .openOption {
     display: block;
     margin-left: 4%;
     background-color: #a8e3f6;
     margin-top: -9vh;
     height: 7vh;
-}
+  }
 
-.queDeseasRegalar {
-  font-family: "Sofia", cursive;
-  margin-left: 28%;
-  font-size: xx-large;
-  margin-top: 27%;
-}
+  .queDeseasRegalar {
+    font-family: "Sofia", cursive;
+    margin-left: 28%;
+    font-size: xx-large;
+    margin-top: 27%;
+  }
 
-.postEluney {
-  height: 26vh;
-  width: 41%;
-  margin-left: 29%;
-  border-radius: 2vh;
-  border: dotted;
-}
+  .postEluney {
+    height: 26vh;
+    width: 41%;
+    margin-left: 29%;
+    border-radius: 2vh;
+    border: dotted;
+  }
 
-.buttonPostOne {
+  .buttonPostOne {
     border-radius: 6px;
     border: 2px solid #398c6e;
     background-color: #87bfb1;
@@ -746,46 +739,51 @@ h3 {
     margin-top: 2%;
     margin-left: 28%;
     width: 20%;
-}
+  }
 
-.buttonCancel {
+  .buttonCancel {
     border-radius: 6px;
     border: 2px solid #398c6e;
     background-color: #87bfb1;
     font-family: "Solway", serif;
     margin-left: 2vh;
     width: 20%;
-}
+  }
 
-.cajaHojaVerde {
-  height: 13vh;
-  width: 13vh;
-  margin-left: 41%;
-  margin-top: 10%;
-}
-.heartIcon {
-  width: 8%;
-  height: auto;
-  margin-left: 49%;
-  margin-top: 1%;
-}
+  .cajaHojaVerde {
+    height: 13vh;
+    width: 13vh;
+    margin-left: 41%;
+    margin-top: 10%;
+  }
+  .heartIcon {
+    width: 30%;
+    height: auto;
+    margin-left: 49%;
+    margin-top: -7%;
+  }
 
-.btnPost {
-  border-radius: 6px;
-  border: 2px solid #398c6e;
-  background-color: #87bfb1;
-  font-family: "Solway", serif;
-  height: 6vh;
-  grid-column: 1/2;
-  margin-left: 33%;
-  margin-top: 6%;
-}
+  .btnPost {
+    border-radius: 6px;
+    border: 2px solid #398c6e;
+    background-color: #87bfb1;
+    font-family: "Solway", serif;
+    height: 6vh;
+    grid-column: 1/2;
+    margin-left: 41%;
+    margin-top: 6%;
+  }
 
-.newPostEluney {
+  .newPostEluney {
     width: 64%;
     height: 5vh;
     margin-top: -15%;
     z-index: 1;
     margin-left: 13%;
-}
+  }
 
+  .numberLike {
+    font-size: 27px;
+    margin-top: 0vh;
+  }
+}

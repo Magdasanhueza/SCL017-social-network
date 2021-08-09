@@ -1,8 +1,8 @@
 export const navBar = () => {
-    const navigation = document.createElement('div');
-    const viewNavigation = `
+  const navigation = document.createElement("div");
+  const viewNavigation = `
     <div class='Bar'>
-    <img class='basicIcon' src='.Assets/sostenible (1).png'></img>
+    <img class='basicIcon' src='.Assets/caja.png'></img>
     <h3 class='wallTitle'>Eluney</h3>
     </div>
     <div class="functions">
@@ -11,7 +11,6 @@ export const navBar = () => {
         <button id="logOut">Cerrar Sesión</button>
     </div>
     `;
-    navigation.innerhtml = viewNavigation;
-    return navigation;
+  navigation.innerhtml = viewNavigation;
+  return navigation;
 };
-

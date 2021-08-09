@@ -1,13 +1,14 @@
-import { home } from './lib/view/templateHome.js';
-import { changeRouter } from './lib/router.js';
+import { home } from "./lib/view/templateHome.js";
+import { changeRouter } from "./lib/router.js";
 
 const init = () => {
   changeRouter(window.location.hash);
-  
+
   //document.getElementById('root').appendChild(home());     //antes de haber cambios en hash siempre tener el home
-  window.addEventListener('hashchange', () => {    //cuando cambie el hash ejecutame:
+  window.addEventListener("hashchange", () => {
+    //cuando cambie el hash ejecutame:
     changeRouter(window.location.hash);
-  })
-}
+  });
+};
 
 window.addEventListener("load", init);

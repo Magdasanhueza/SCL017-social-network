@@ -55,7 +55,7 @@ export const likePost = (id, emailData) => {
         });
       }
       colorAndNumber(id, postLike.like.length, likeOld);
-      console.log("like");
+     
     })
     .catch(() => {});
 }; //fin de likePost
@@ -66,7 +66,7 @@ const EditUpdate = (id, addEdit) => {
     .doc(id)
     .get()
     .then(() => {
-      console.log("cualquier cosa");
+      
       const textPost = document.getElementById(`contentPost-${id}`);
       textPost.innerHTML = `<br> ${addEdit}`;
     });
@@ -77,17 +77,17 @@ export const editPostFb = (id, addEdit) => {
   //if (e.target === submitButton) {
   // submitButton.style.display = "none";
   //return "";
-console.log("id: ", id);
-const PostRef = db.collection("comments").doc(id);
-console.log(PostRef, "ineditpost");
-PostRef.update({
-  postContent: addEdit,
-  date: new Date(),
-})
-  .then(() => {
-    EditUpdate(id, addEdit);
+  
+  const PostRef = db.collection("comments").doc(id);
+  
+  PostRef.update({
+    postContent: addEdit,
+    date: new Date(),
   })
-  .catch((err) => {
-    console.log("err message: ", err.message);
-  }); //fin editPost
- };
+    .then(() => {
+      EditUpdate(id, addEdit);
+    })
+    .catch((err) => {
+      
+    }); //fin editPost
+};

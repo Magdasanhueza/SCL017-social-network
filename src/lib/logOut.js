@@ -3,11 +3,11 @@ export const logOut = () => {
     .auth()
     .signOut()
     .then(() => {
-      console.log("cerré sesión");
+      
       window.location.href = "";
     })
     .catch((error) => {
-      console.log(error);
+     
       // An error happened.
     });
 };
