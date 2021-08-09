@@ -1,17 +1,27 @@
+import { logOut } from "./logOut.js";
+
 export const navBar = () => {
     const navigation = document.createElement('div');
     const viewNavigation = `
-    <div class='Bar'>
-    <img class='basicIcon' src='.Assets/sostenible (1).png'></img>
+    <div class='Bargit'>
+    
     <h3 class='wallTitle'>Eluney</h3>
     </div>
     <div class="functions">
-        <a>¿Quieres postear?</a>
-        <a>Mi Perfil</a>
-        <button id="logOut">Cerrar Sesión</button>
+    <a>¿Quieres postear?</a>
+    <a>Mi Perfil</a>
+    <button id="close">Cerrar Sesión</button>
     </div>
     `;
-    navigation.innerhtml = viewNavigation;
+    navigation.innerHTML = viewNavigation;
+     
+    const buttonLogOut = navigation.querySelector('#close');
+    console.log('buttonLogOut', buttonLogOut);
+    buttonLogOut.addEventListener("click", ()=>{
+        console.log("addEventListenerLogout")
+    });    
+    
     return navigation;
 };
+
 
