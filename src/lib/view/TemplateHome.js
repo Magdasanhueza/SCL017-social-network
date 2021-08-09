@@ -14,8 +14,7 @@ export const home = () => {
           <h1>Eluney</h1>
           <h2 class="slogan">No lo utilizo, te lo regalo!</h2>
           <div class= "containerBoxGreen">
-            <img class="boxGreen" src="Assets/sostenible (1).png">
-
+            <img src="Assets/caja.png" class="boxGreen"></img>
           </div>
           <input class="inputHome" id="email" spellcheck="false" placeholder="Ingrese E-mail" type="email" name="text">
           <input class="inputHome" id="password" spellcheck="false" placeholder="Ingrese contraseña" type="password" name="text">
@@ -23,14 +22,9 @@ export const home = () => {
           <button id="ingresar" class="ingresa"> Ingresar </button>
           <p class="o">--------- o ----------</p>                    
           <button id="facebook" class="IngFacebook"><img class="iconFacebook" src="Assets/facebook.png"></button>
-                    
           <button id="google" class="IngGoogle"><img class="iconGoogle" src="Assets/google-mas.png"></button>
-
           <p class="goRegistre">¿Aun no te registras? <a href="#/Registrate">Ingresa Aqui</a></p>
-
-          
       </div>
-
     </div>
     `;
   divHome.innerHTML = viewHome;

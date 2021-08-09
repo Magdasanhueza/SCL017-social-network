@@ -5,9 +5,16 @@ import { templatePost } from './view/templatePost.js';
 
 
 
+<<<<<<< HEAD
 export const changeRouter = (hash) => {     //exportar const que ira cambiando las rutas
     
     if (hash === '#/Registrate') {
+=======
+export const changeRouter = (hash) => {     //exportar const que ira cambiando las rutas a main
+    if (hash === '#/') {        
+        return templateView(hash)
+    }if (hash === '#/Registrate') {
+>>>>>>> magda/master
         return templateView(hash)
     } if (hash === '#/muro') {
         return templateView(hash)
