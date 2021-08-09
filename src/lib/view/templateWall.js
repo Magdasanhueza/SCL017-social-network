@@ -118,11 +118,7 @@ export const wall = (e) => {
       
     </div>
    `;
-
-      /*<div class="postImage">
-      ${doc.data().imgURL === undefined ? '' : imgPost}
-      </div>*/
-      
+   
     });
 
     querySnapshot.forEach((doc) => {
