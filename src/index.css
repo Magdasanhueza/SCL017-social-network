@@ -785,5 +785,6 @@ h3 {
   .numberLike {
     font-size: 27px;
     margin-top: 0vh;
+    background-color: rgb(0, 0, 0);
   }
 }
